@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document(collection = "patient")
+@Document(collection = "patients")
 public class Patient {
 	
 	//field 
@@ -73,6 +73,7 @@ public class Patient {
 		// TODO Auto-generated method stub
 		return "Patient" + nom;
 	}
+	
 	   
 	
 	

@@ -3,16 +3,19 @@ package com.corigo.tech.model;
 
 
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
-
+@Document(collection = "patient")
 public class Patient {
 	
 	//field 
 	
 	@Id
-	private long id ;
+	private ObjectId id ;
+
 
 	private String nom ;
 	
@@ -24,7 +27,7 @@ public class Patient {
 
 	//Constructor 
 	public Patient() {}
-	public Patient(int id, String nom, String prenom, String dateN, String sexe) {
+	public Patient(ObjectId id, String nom, String prenom, String dateN, String sexe) {
 		
 		this.id = id;
 		this.nom = nom;
@@ -34,10 +37,11 @@ public class Patient {
 
 	
 	}
-	public long getId() {
+	
+	public ObjectId getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(ObjectId id) {
 		this.id = id;
 	}
 	public String getNom() {

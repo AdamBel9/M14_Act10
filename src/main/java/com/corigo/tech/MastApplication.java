@@ -24,11 +24,12 @@ public class MastApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		patientRepository.findAll().forEach(p -> System.out.println(p));
-		Patient p =patientRepository.findByNom("Mohamedi");
-		System.out.println(p.getPrenom());
+		/*
+		 * patientRepository.findAll().forEach(p -> System.out.println(p)); Patient p
+		 * =patientRepository.findByNom("Mohamedi"); System.out.println(p.getPrenom());
+		 */
 	}
-	;
+	
 
 
 }

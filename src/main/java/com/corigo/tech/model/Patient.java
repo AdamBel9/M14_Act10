@@ -7,12 +7,12 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
+//patient is the name of the table in data base .
 @Document(collection = "patients")
 public class Patient {
 	
 	//field 
-	
+	//When id is generated in data base w declare is ObjectId type .
 	@Id
 	private ObjectId id ;
 
